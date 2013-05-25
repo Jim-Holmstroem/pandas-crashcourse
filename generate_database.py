@@ -8,7 +8,7 @@ import itertools as it
 conn = sqlite3.connect('data/data.db')
 cur = conn.cursor()
 cur.execute(
-    '''CREATE TABLE IF NOT EXISTS stocks (symbol text, date text, open real, high real, low real, close real, volume real, adjclose real)'''
+    '''CREATE TABLE IF NOT EXISTS stocks (token text, date text, open real, high real, low real, close real, volume real, adjclose real)'''
 )
 
 def render_csv_to_sql(cur, csv_filename):
