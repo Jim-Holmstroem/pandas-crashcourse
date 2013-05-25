@@ -1,0 +1,5 @@
+.. -*- mode: rst -*-
+
+pandas-crashcourse
+==================
+
