@@ -22,6 +22,16 @@ print(data[['open', 'close']])
 
 data['diff'] = pd.Series(data['close']-data['open'], index=data.index)
 
+#PIVOTING
+print(
+    pd.pivot_table(
+        data,
+        values=['open', 'close'],
+        rows=data.index,
+        cols='token'
+    )
+)
+
 #GROUPBY
 groups = data.groupby('token')
 
